@@ -1,0 +1,164 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(231, 225, 231);
+    color: rgb(0, 0, 0);
+    margin-top: 5pc;
+}
+/*BARRA DE ARRIBA*/
+.menu{
+    background: rgb(83, 31, 104);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    
+}
+
+.menu li a:hover{
+    background: rgb(209, 178, 245);
+}
+/*ICONOS DE LINKS*/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+.wrapper .icon:hover .tooltipe {
+    top: -25px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #a57dd8;
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 3rem;
+    height: 3rem; /* Tamaño ajustado para todos los iconos */
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    line-height: 10px;
+}
+
+.wrapper .tooltipe {
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .facebook:hover .tooltipe,
+.wrapper .facebook:hover .tooltip::before {
+    background: #4718f2;
+    color: #fff;
+}
+
+.wrapper .instagram:hover .tooltipe,
+.wrapper .instagram:hover .tooltip::before {
+    background: #50b89ee8;
+    color: #fff;
+}
+
+.wrapper .whatsapp:hover .tooltipe,
+.wrapper .whatsapp:hover .tooltip::before {
+    background: #82ccf7;
+    color: #fff;
+}
+/*ACERCA DE MI*/
+.cuadro-flotador {
+    background-color: #9862ad; 
+    border: 2px solid #9050f7; 
+    border-radius: 10px; 
+    padding: 3px; /* Añade un espacio interno */
+    margin: 5px; /* Ajusta el margen externo */
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.1); /* Añade una sombra */
+    animation: flotar 3s infinite alternate; /* Define la animación */
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+#presentacion {
+    max-width: 1000px; /* Limita el ancho del contenido */
+    margin: 0 auto; 
+    text-align: justify; /
+}
+
+
+
+/*cuadro de login*/
+form{
+    width: 350px;
+    height: 400px;
+    background-color: #440252;
+    padding-top: 20px;
+    margin: 50px auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+    box-shadow: -10px 20px 15px 10px gray;
+
+}
+h2{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+input{
+    font-size: 16px;
+    padding: 8px;
+    display: flex;
+    margin: 10px auto;
+}
+label{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+}
+input[type="button"]{
+    width: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+    display:block ;
+    background-color: rgb(108, 15, 151);
+    cursor: pointer;
+
+}
+input[type="button"]:hover{
+    background-color: rgb(227, 145, 243);
+}
